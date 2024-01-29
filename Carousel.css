@@ -1,0 +1,100 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.slideshow {
+    width: 100%;
+  max-width: 600px;
+  height: 400px;
+  position: relative;
+  border: solid 1px;
+  margin-left: 100px;
+ 
+}
+
+.photos {
+  display: none;
+}
+
+.prev , .next {
+  
+  position: absolute;
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+  padding: 0 16px 16px ; 
+  top: 50%;
+  font-size: 25px;
+  margin-top: -22px;
+  font-weight: bold;
+  display: block;
+  transition: 0.7s ease;
+}
+
+.next {
+  right: 0;
+  
+}
+
+.prev:hover, .next:hover {
+  color: salmon;
+}
+
+.auto {
+ position: relative;
+}
+
+.autostop, .autostart {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  position: absolute;
+  left: 20%;
+  margin-top: 1px;
+  background: transparent;
+  transition: 0.7s ease;
+  display: block;
+}
+
+.autostart {
+  left: 29%;
+}
+
+.autostart:hover, .autostop:hover {
+  background: salmon;
+}
+
+/* THUMBNAILS */
+
+.thumbnail  {
+background: transparent;
+ position: absolute;
+ bottom: 8%;
+ left: 29%;
+ 
+
+}
+
+.dots  {
+  border-radius: 50%;
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  margin: 20px;
+  float: left;
+  transition: 0.7s ease;
+  cursor: pointer;
+  
+}
+
+.active, .dots:hover {
+  background-color: salmon;
+}
+

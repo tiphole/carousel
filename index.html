@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+  <link rel="stylesheet" href="Carousel.css">
+  <script src="carousel.js" defer></script>
+</head>
+
+<body>
+  <div class="slideshow">
+    <button class="prev" onclick="nextSlide(-1)">&#10094;</button>
+    <img src="IMAGE1.jpg"  class="photos" alt="">
+    <img src="IMAGE2.jpg"  class="photos" alt="">
+    <img src="IMAGE3.jpg"  class="photos" alt="">
+    <img src="IMAGE4.jpg"  class="photos" alt="">
+    <img src="IMAGE5.jpg"  class="photos" alt="">
+    <button class="next" onclick="nextSlide(1)">&#10095;</button>
+    <div class="thumbnail">
+      <div class="dots active"  onclick="currentSlide()"></div>
+      <div class="dots" onclick="currentSlide()"></div>
+      <div class="dots" onclick="currentSlide()"></div>
+      <div class="dots" onclick="currentSlide()"></div>
+      <div class="dots" onclick="currentSlide()"></div>
+    </div>
+  </div>
+  <div class="auto">
+    <button class="autostop" onclick="stopSlide()">&#x23f9;</button>
+    <button class="autostart" onclick="playSlide()">&#x23e9;</button>
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
